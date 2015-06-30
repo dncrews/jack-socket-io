@@ -1,0 +1,14 @@
+{
+  "name": "olympus-plugin-name",
+  "version": "1.0.0",
+  "description": "Olympus Plugin {description}",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Crews <dan.crews@vivintsolar.com>",
+  "license": "MIT",
+  "dependencies": {
+    "olympus-plugin": "^1.0.0"
+  }
+}
