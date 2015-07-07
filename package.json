@@ -1,17 +1,19 @@
 {
-  "name": "olympus-sockets",
+  "name": "jack-socket-io",
   "version": "1.0.0",
-  "description": "Olympus Plugin for auto-loading socket.io files",
+  "description": "Jack-Stack Plugin for auto-loading socket.io files",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dan Crews <dan.crews@vivintsolar.com>",
+  "author": "Dan Crews <crewsd@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "debug": "^2.2.0",
     "glob": "^5.0.12",
-    "olympus-plugin": "^1.0.0",
     "socket.io": "^1.3.5"
+  },
+  "peerDependencies": {
+    "jack-stack": "^2.0.0"
   }
 }

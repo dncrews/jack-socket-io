@@ -1,22 +1,23 @@
-# olympus-sockets
-This Olympus Plugin that auto-loads your socket connections.
+# jack-socket-io
+This Jack-Stack Plugin that auto-loads your socket-io connections.
 
 
 ## Config
 
 ```js
-olympus.use(require('olympus-sockets')({
-  dirnames: [ path.join(process.cwd(), 'path', 'to', 'sockets', 'directory' ]
+jack.add(require('jack-socket-io').configure({
+  dirnames: [ 'path1', 'path2', ]
 }));
 ```
 
-By default, the `sockets:load` event gets handled after jack-stack `routing`.
+By default, the `sockets:load` event gets handled after jack-stack `router`.
 If you would like to move this elsewhere,  you may set a `config.useBefore`
 or `config.useAfter` the string eventname that you want to neighbor.
 
 ```js
-olympus.use(require('olympus-sockets')({
-  useBefore: 'routing',
+jack.add(require('jack-socket-io').configure({
+  dirnames: [],
+  useBefore: 'router',
 }))
 ```
 
@@ -27,6 +28,7 @@ is:
 
 ```js
 require('olympus-sockets')({
+  dirnames: [],
   logger: {
     sockets: {
       debug: someLoggingFunction,
