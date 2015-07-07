@@ -1,4 +1,7 @@
 # jack-socket-io
+[![NPM version][npm-image]][npm-url]
+[![Downloads][downloads-image]][downloads-url]
+
 This Jack-Stack Plugin that auto-loads your socket-io connections.
 
 
@@ -52,3 +55,8 @@ module.exports = function(io) {
   ...
 }
 ```
+
+[npm-image]: https://img.shields.io/npm/v/jack-socket-io.svg
+[npm-url]: https://www.npmjs.org/package/jack-socket-io
+[downloads-image]: https://img.shields.io/npm/dm/jack-socket-io.svg
+[downloads-url]: https://www.npmjs.org/package/jack-socket-io
