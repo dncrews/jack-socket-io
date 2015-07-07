@@ -10,7 +10,7 @@ jack.add(require('jack-socket-io').configure({
 }));
 ```
 
-By default, the `sockets:load` event gets handled after jack-stack `router`.
+By default, the `sockets` event gets handled before jack-stack `stack-end`.
 If you would like to move this elsewhere,  you may set a `config.useBefore`
 or `config.useAfter` the string eventname that you want to neighbor.
 
@@ -52,10 +52,3 @@ module.exports = function(io) {
   ...
 }
 ```
-
-
-## Jack-Events
-To play nice with this plugin, you should expect the following events:
-
-- `config:sockets`: Sets up the socket configuration
-- `sockets:load`: Manages the loading of all of the sockets files
