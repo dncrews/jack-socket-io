@@ -8,6 +8,12 @@
   },
   "author": "Dan Crews <crewsd@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "jack-stack",
+    "plugin",
+    "sockets",
+    "socket-io"
+  ],
   "dependencies": {
     "debug": "^2.2.0",
     "glob": "^5.0.12",
